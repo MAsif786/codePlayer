@@ -95,7 +95,15 @@ function resizeContent(){
 
     $(".container").css("width", 100/totalActive + "%");
 
-    $("iframe").height(window.innerHeight - $("#header").height());
+    $("iframe").height(window.innerHeight - $("#header").height() - $(".content-tag").height() - parseInt($(".content-tag")
+        .css("padding").replace("px", ""))*2 - 2);
+    
+    
+    $("textarea").height(window.innerHeight - $("#header").height() - $(".content-tag").height() - parseInt($(".content-tag")
+        .css("padding").replace("px", ""))*2 - parseInt($("textarea")
+        .css("padding").replace("px", ""))*2 - 2);
+    
+    $("#toggle-button-container").css("right", (window.innerWidth-$("#toggle-button-container").width())/2 + "px");
 }
 
 resizeContent();
