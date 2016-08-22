@@ -2,4 +2,4 @@
 
 {codePlayer} is an online HTML, CSS and JS realtime editor.
 
-You can view the wevsite working at http://www.mrxuso.com/codeplayer
+You can view the website working at http://www.mrxuso.com/codeplayer
