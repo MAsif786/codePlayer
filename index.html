@@ -1,0 +1,82 @@
+<html>
+
+    <head>
+        
+        <title>{codePlayer}</title>
+        
+        <link rel="icon" href="img/favicon.png"/>
+        
+        
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        
+        <!--jQuery UI-->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    
+    <body>
+        
+        <div id="header">
+        
+            <div id="logo-container">
+            
+                <img id="logo" src="img/icon.png">
+            
+            </div>
+            
+            <div id="toggle-button-container">
+            
+                <div class="toggle-button" id="html-tb">HTML</div>
+                
+                <div class="toggle-button" id="css-tb">CSS</div>
+                
+                <div class="toggle-button" id="js-tb">Javascript</div>
+                
+                <div class="toggle-button" id="output-tb">Output</div>
+                
+                <div class="toggle-button" id="fork-tb">Fork-me</div>
+                
+                <div class="clear-float"></div>
+            
+            </div>
+            
+            <div class="clear-float"></div>
+        
+        </div>
+        
+        <div id="html-container" class="container">
+        
+            <textarea><h1 id="test">Holamundo</h1></textarea>
+        
+        </div>
+        
+         <div id="css-container" class="container">
+        
+            <textarea>body{color: dodgerblue;}</textarea>
+        
+        </div>
+        
+        <div id="js-container" class="container">
+        
+            <textarea>document.getElementById("test").style.fontSize = "300%";</textarea>
+        
+        </div>
+        
+        <div id="output-container" class="container">
+        
+            <iframe id="iframe"></iframe>
+        
+        </div>
+        
+        <a id="fork-me" href="https://github.com/MrXuso/codePlayer"><img src="img/fork-me.png" style="position: absolute; bottom: 0; right: 0; border: 0;" alt="Fork me on GitHub" src="/img/fork-me.png"></a>
+        
+        <script src="script.js"></script>
+    
+    </body>
+
+
+</html>
